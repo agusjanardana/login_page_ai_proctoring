@@ -1,0 +1,155 @@
+body{
+  // set to remove horizontal scroll 
+  overflow-x: hidden;
+}
+
+.login_component {
+  background: url(../assets/background-pages.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  white-space: nowrap; /* Mencegah wrap konten ke baris baru */
+  overflow: hidden; 
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); // Putih dengan tingkat kejernihan 50%
+    filter: blur(5px); // Efek blur 5px
+    z-index: 1;
+  }
+
+}
+
+.wrapper_landing_login{
+  position: absolute;
+  margin-left: 241px;
+  margin-top: 196px;
+  z-index: 2;
+    margin: 0 auto; /* Agar container berada di tengah layar */
+    width: 100%; /* Lebar container mengikuti layar */
+}
+
+.column_login {
+  float: left;
+    display: flex;
+  flex-direction: column; 
+  justify-content: left; 
+  align-items: left;
+  width: 25%;
+}
+
+.row_login {
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  }
+
+
+// .row_login:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+  
+// }
+
+.telu_logo {
+  width: 257px;
+  height: 104px;
+}
+
+.owl_logo {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; 
+  position: absolute;
+  margin-top: 90px;   
+  display: block; /* Menghilangkan whitespace di sekitar gambar */
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar container */
+  height: auto;
+  /* Sesuaikan objek-fit sesuai kebutuhan */
+
+}
+
+.text_wrapper_login_proctoring {
+ 
+}
+
+.text_wrapper_login_proctoring .text_header_one {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 72px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 600px;
+    
+}
+
+.text_wrapper_login_proctoring .text_header_two {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+
+.login_form_wrapper{
+    /* Rectangle 10 */
+  position: absolute;
+  width: 700px;
+  height: 1100px;
+  border-radius: 15.5px;
+  filter: drop-shadow(6px 6px 15px rgba(0,0,0,0.48 ));
+  background: #fdfdfd
+}
+
+.item_one{
+  justify-content: left;
+}
+
+.login_form{
+  padding: 8rem;
+}
+
+
+
+
+// text login form
+
+.login_form_header{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 72px;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.login_form_text{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
