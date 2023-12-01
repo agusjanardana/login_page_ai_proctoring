@@ -21,18 +21,18 @@ export function Login() {
                         </div>
                     </div>
                     <div className="column_login">
-
                         <div className="login_form_wrapper">
                             <div className="login_form">
-                                <p className="login_form_header">SSO Login</p>
-                                <p className="login_form_text">Single Account, Single Sign On - Login</p>
+                                <a className="login_form_header">SSO Login</a>
+                                <a className="login_form_text">Single Account, Single Sign On - Login</a>
                                 <div className="login_form_input">
                                     <input type="text" placeholder="SSO Username" />
                                     <input type="password" placeholder="Password" />
                                 </div>
                                 <div className="login_form_button">
                                     <button className="login_form_button_login">Login SSO</button>
-                                    <button className="login_form_button_register">Login Microsoft</button>
+                                    <p>Atau</p>
+                                    <button className="login_form_button_login-microsoft">Login Microsoft</button>
                                 </div>
                                 <div className="login_form_footer">
                                     <p className="login_form_footer_text">Lupa Kata Sandi?</p>

@@ -50,7 +50,7 @@ body{
   align-items: left;
   justify-content: space-around;
   width: 100%;
-  margin-top: 15rem;
+  margin-top: 7rem;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -65,16 +65,16 @@ body{
 // }
 
 .telu_logo {
-  width: 257px;
-  height: 104px;
+  width: 157px;
+  height: 52px;
 }
 
 .owl_logo {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   object-fit: cover; 
   position: absolute;
-  margin-top: 90px;   
+  margin-top: 50px;   
   display: block; /* Menghilangkan whitespace di sekitar gambar */
   max-width: 100%; /* Memastikan gambar tidak melebihi lebar container */
   height: auto;
@@ -90,11 +90,10 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 52px;
-    line-height: 72px;
+    font-size: 32px;
     color: white;
     margin-bottom: 0px;
-    margin-top: 600px;
+    margin-top: 22rem;
     
 }
 
@@ -102,18 +101,18 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 22px;
     color: white;
     margin-bottom: 0px;
-    margin-top: 50px;
+    margin-top: 34px;
 }
 
 
 .login_form_wrapper{
     /* Rectangle 10 */
   position: absolute;
-  width: 700px;
-  height: 1100px;
+  width: 500px;
+  height: 650px;
   border-radius: 15.5px;
   filter: drop-shadow(6px 6px 15px rgba(0,0,0,0.48 ));
   background: #fdfdfd
@@ -124,32 +123,113 @@ body{
 }
 
 .login_form{
-  padding: 8rem;
+  padding: 4rem;
 }
 
 
 
 
-// text login form
 
-.login_form_header{
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 72px;
-  color: black;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
 
-.login_form_text{
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 27px;
-  color: #000000;
-  margin-bottom: 0px;
-  margin-top: 0px;
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+
+  .login_form_header {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .login_form_text {
+    margin-top: 16px;
+    color: #555;
+  }
+
+  .login_form_input {
+    margin-top: 60px;
+    // column
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+
+    input {
+      border: none;
+      border-bottom: 1px solid #ccc; // Add a bottom border instead of a box
+      outline: none;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        color: #aaa;
+      }
+
+      &:focus {
+        border-bottom: 2px solid #4CAF50; // Highlight bottom border on focus
+      }
+
+      &.error {
+        border-bottom: 2px solid #FF0000; // Red border for error
+      }
+    }
+  }
+
+  .login_form_button {
+    margin-top: 20px;
+    // column
+    display: flex;
+    flex-direction: column;
+
+    p{
+      text-align: center;
+    }
+
+    .login_form_button_login {
+      background-color: #0FD19C; // Green color for Login SSO button
+      color: #fff;
+      padding: 15px;
+      
+      // border radius no color
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #45a049; // Darker green on hover
+      }
+    }
+
+    .or-text {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .login_form_button_login-microsoft {
+      background-color: #ccc; // Gray color for Login Microsoft button
+      color: #fff;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+       border: none;
+      border-radius: 15px;
+
+      &:hover {
+        background-color: #bbb; // Darker gray on hover
+      }
+    }
+  }
+
+  .login_form_footer {
+    margin-top: 5px;
+
+    .login_form_footer_text {
+      color: #2F98D5;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
