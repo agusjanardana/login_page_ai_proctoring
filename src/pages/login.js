@@ -4,6 +4,8 @@ import '../style/login.scss';
 
 import TeluLogo from '../assets/telulogo.png';
 import OwlLogo from '../assets/owl.png';
+import SatuLogo from '../assets/primary.png';
+import OtakLogo from '../assets/otak.png';
 
 export function Login() {
     return (
@@ -42,7 +44,29 @@ export function Login() {
                     </div>
 
                 </div>
+
             </div> 
+            <div class="footer">
+                <div class="wrapper_footer">
+                    <hr></hr>
+                    <div class="wrapper_item">
+                        <div class="footer_text">
+                            <p>© 2023 Telkom University</p>
+                        </div>
+                        <div class="wrapper_image">
+                            <img className="satu_logo" src={SatuLogo}></img>
+                            <img className="otak_logo" src={OtakLogo}></img>
+                        </div>
+                        
+
+                    </div>
+                   
+                </div>
+                
+
+            </div>
+
+
         </div>
     );
 }

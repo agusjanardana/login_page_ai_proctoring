@@ -233,3 +233,48 @@ body{
     }
   }
 }
+ .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  z-index: 5;
+}
+
+
+.wrapper_footer{
+    margin-left: 148px;
+    margin-right: 150px;
+
+}
+
+.footer_text {
+  margin-left: 50px;
+  margin-top : 20px;
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+.wrapper_item{
+  justify-content: space-between;
+  display: flex;
+}
+
+.satu_logo{
+  width: 142px;
+  height: 70px;
+}
+
+.otak_logo{
+  width: 81px;
+  height: 58px;
+}
