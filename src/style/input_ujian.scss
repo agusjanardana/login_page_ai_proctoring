@@ -1,0 +1,134 @@
+body {
+  overflow-y: hidden;
+}
+
+.container {
+  margin-top: 140px;
+  margin-left: 145px;
+
+  .row_input {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    width: 100%;
+
+    .column_input {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      width: 100%;
+
+      .owl_logo {
+        margin-top: 13rem;
+        margin-left: 10rem;
+        width: 350px;
+      }
+
+      .telkom_logo {
+        width: 300px;
+        height: 100px;
+      }
+
+      a {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 36px;
+        color: #000000;
+        text-decoration: none;
+        margin-top: 5rem;
+      }
+
+      .error {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 36px;
+        color: #ff0000;
+        text-decoration: none;
+        margin-top: 1rem !important;
+      }
+
+      .atau {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #646060;
+        text-decoration: none;
+        margin-top: 1rem !important;
+      }
+
+      .button_create_new_exam {
+        margin-top: 15px;
+        background-color: #0fd19c; // Gray color for Login Microsoft button
+        color: #fff;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+        width: 35%;
+
+        &:hover {
+          background-color: #bbb; // Darker gray on hover
+        }
+      }
+
+      .wrapper_input {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+
+        width: 100%;
+        input {
+          border: none;
+          border-bottom: 1px solid #ccc; // Add a bottom border instead of a box
+          outline: none;
+          width: 40%;
+          margin-bottom: 10px;
+
+          &::placeholder {
+            color: #aaa;
+            font-size: 18px;
+          }
+
+          &:focus {
+            border-bottom: 2px solid #4caf50; // Highlight bottom border on focus
+          }
+
+          &.error {
+            border-bottom: 2px solid #ff0000; // Red border for error
+          }
+        }
+
+        p {
+          font-family: "Arial", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          margin-left: 15px;
+          font-size: 18px;
+          color: #2f98d5;
+        }
+      }
+    }
+  }
+}
+
+.footer_text {
+  margin-left: 50px;
+  margin-top: 20px;
+  p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}

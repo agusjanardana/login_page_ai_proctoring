@@ -7,7 +7,7 @@ import {
   useParams,
 } from "react-router-dom";
 
-import { Login} from "../pages";
+import { Login, InputUjian} from "../pages";
 
 
 export function Routers() {
@@ -15,8 +15,9 @@ export function Routers() {
         <Router>
         <div>
             <Routes>
-                <Route exact path="/" element={<Login/>}>
-                </Route>
+                <Route exact path="/" element={<Login/>}></Route>
+                <Route exact path="/input" element={<InputUjian/>}></Route>
+
             </Routes>
         </div>
         </Router>

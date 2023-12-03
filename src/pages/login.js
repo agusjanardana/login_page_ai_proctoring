@@ -7,6 +7,10 @@ import OwlLogo from '../assets/owl.png';
 import SatuLogo from '../assets/primary.png';
 import OtakLogo from '../assets/otak.png';
 
+
+const isLoginError = true;
+
+
 export function Login() {
     return (
         <div className="login_component">
@@ -30,6 +34,10 @@ export function Login() {
                                 <div className="login_form_input">
                                     <input type="text" placeholder="SSO Username" />
                                     <input type="password" placeholder="Password" />
+
+                                    {/* show jika isLoginError */}
+
+                                    {isLoginError && <a>Username atau password salah, silahkan coba lagi</a>}
                                 </div>
                                 <div className="login_form_button">
                                     <button className="login_form_button_login">Login SSO</button>
