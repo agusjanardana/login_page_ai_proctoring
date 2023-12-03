@@ -1,5 +1,5 @@
-body{
-  // set to remove horizontal scroll 
+body {
+  // set to remove horizontal scroll
   overflow-x: hidden;
 }
 
@@ -11,7 +11,7 @@ body{
   height: 100vh;
   position: relative;
   white-space: nowrap; /* Mencegah wrap konten ke baris baru */
-  overflow: hidden; 
+  overflow: hidden;
 
   &:before {
     content: "";
@@ -24,23 +24,22 @@ body{
     filter: blur(5px); // Efek blur 5px
     z-index: 1;
   }
-
 }
 
-.wrapper_landing_login{
+.wrapper_landing_login {
   position: absolute;
   margin-left: 241px;
   margin-top: 196px;
   z-index: 2;
-    margin: 0 auto; /* Agar container berada di tengah layar */
-    width: 100%; /* Lebar container mengikuti layar */
+  margin: 0 auto; /* Agar container berada di tengah layar */
+  width: 100%; /* Lebar container mengikuti layar */
 }
 
 .column_login {
   float: left;
-    display: flex;
-  flex-direction: column; 
-  justify-content: left; 
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   align-items: left;
   width: 25%;
 }
@@ -54,14 +53,13 @@ body{
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  }
-
+}
 
 // .row_login:after {
 //   content: "";
 //   display: table;
 //   clear: both;
-  
+
 // }
 
 .telu_logo {
@@ -72,65 +70,55 @@ body{
 .owl_logo {
   width: 300px;
   height: 300px;
-  object-fit: cover; 
+  object-fit: cover;
   position: absolute;
-  margin-top: 50px;   
+  margin-top: 50px;
   display: block; /* Menghilangkan whitespace di sekitar gambar */
   max-width: 100%; /* Memastikan gambar tidak melebihi lebar container */
   height: auto;
   /* Sesuaikan objek-fit sesuai kebutuhan */
-
 }
 
 .text_wrapper_login_proctoring {
- 
 }
 
 .text_wrapper_login_proctoring .text_header_one {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 22rem;
-    
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 22rem;
 }
 
 .text_wrapper_login_proctoring .text_header_two {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 34px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 34px;
 }
 
-
-.login_form_wrapper{
-    /* Rectangle 10 */
+.login_form_wrapper {
+  /* Rectangle 10 */
   position: absolute;
   width: 500px;
   height: 650px;
   border-radius: 15.5px;
-  filter: drop-shadow(6px 6px 15px rgba(0,0,0,0.48 ));
-  background: #fdfdfd
+  filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.48));
+  background: #fdfdfd;
 }
 
-.item_one{
+.item_one {
   justify-content: left;
 }
 
-.login_form{
+.login_form {
   padding: 4rem;
 }
-
-
-
-
-
-
 
 .login_form {
   display: flex;
@@ -166,24 +154,20 @@ body{
       }
 
       &:focus {
-        border-bottom: 2px solid #4CAF50; // Highlight bottom border on focus
+        border-bottom: 2px solid #4caf50; // Highlight bottom border on focus
       }
 
       &.error {
-        border-bottom: 2px solid #FF0000; // Red border for error
+        border-bottom: 2px solid #ff0000; // Red border for error
       }
     }
 
-    a{
+    a {
       text-decoration: none;
       color: red;
       font-size: 14px;
       text-align: center;
-
-     
     }
-
-    
   }
 
   .login_form_button {
@@ -192,15 +176,15 @@ body{
     display: flex;
     flex-direction: column;
 
-    p{
+    p {
       text-align: center;
     }
 
     .login_form_button_login {
-      background-color: #0FD19C; // Green color for Login SSO button
+      background-color: #0fd19c; // Green color for Login SSO button
       color: #fff;
       padding: 15px;
-      
+
       // border radius no color
       border: none;
       border-radius: 15px;
@@ -222,7 +206,7 @@ body{
       padding: 15px;
       border: none;
       cursor: pointer;
-       border: none;
+      border: none;
       border-radius: 15px;
 
       &:hover {
@@ -235,7 +219,7 @@ body{
     margin-top: 5px;
 
     .login_form_footer_text {
-      color: #2F98D5;
+      color: #2f98d5;
       cursor: pointer;
 
       &:hover {
@@ -244,7 +228,7 @@ body{
     }
   }
 }
- .footer {
+.footer {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -254,18 +238,16 @@ body{
   z-index: 5;
 }
 
-
-.wrapper_footer{
-    margin-left: 148px;
-    margin-right: 150px;
-
+.wrapper_footer {
+  margin-left: 148px;
+  margin-right: 150px;
 }
 
 .footer_text {
   margin-left: 50px;
-  margin-top : 20px;
+  margin-top: 20px;
   p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -275,17 +257,17 @@ body{
   }
 }
 
-.wrapper_item{
+.wrapper_item {
   justify-content: space-between;
   display: flex;
 }
 
-.satu_logo{
-  width: 142px;
-  height: 70px;
+.satu_logo {
+  width: 120px;
+  height: 50px;
 }
 
-.otak_logo{
-  width: 81px;
-  height: 58px;
+.otak_logo {
+  width: 70px;
+  height: 50px;
 }

@@ -4,10 +4,17 @@ import TelkomLogo from "../assets/telkomlogo.png";
 import OtakLogo from "../assets/otak.png";
 import OwlLogo from "../assets/owl.png";
 import SatuLogo from "../assets/primary.png";
-
-const isErrorUjian = true;
+import { useLocation } from "react-router-dom";
 
 export function InputUjian() {
+  const isErrorUjian = true;
+
+  // Dapatkan informasi path saat ini
+  const location = useLocation();
+
+  // Tentukan warna hr berdasarkan path
+  const hrColor = location.pathname === "/" ? "white" : "black";
+  const telkomColor = location.pathname === "/" ? "white" : "black";
   return (
     <div className="container">
       <div className="row_input">
@@ -32,13 +39,28 @@ export function InputUjian() {
           <img className="owl_logo" src={OwlLogo}></img>
         </div>
       </div>
+      <div style={{ marginTop: "3rem" }}></div>
+
+      <div className="row_box">
+        <div className="box">
+          <a>User Manual - Peserta</a>
+        </div>
+        <div className="box">
+          <a>User Manual - Pengawas</a>
+        </div>
+        <div className="box">
+          <a>User Manual - Management</a>
+        </div>
+      </div>
 
       <div class="footer">
         <div class="wrapper_footer">
-          <hr></hr>
+          {/* check if router is in /input */}
+
+          <hr style={{ backgroundColor: hrColor }}></hr>
           <div class="wrapper_item">
             <div class="footer_text">
-              <p>© 2023 Telkom University</p>
+              <p style={{ color: telkomColor }}>© 2023 Telkom University</p>
             </div>
             <div class="wrapper_image">
               <img className="satu_logo" src={SatuLogo}></img>
